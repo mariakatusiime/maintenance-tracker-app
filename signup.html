@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link type="text/css" rel="stylesheet" href="css/signup.css"/>
+<title>Maintenace Tracking Application</title>
+<div class="page">
+<div class="headingdiv">
+<h1 id="heading1" class="heading1"> User Maintenace Tracking Application</h1>
+</div>
+</head>
+
+<body>
+    <div>
+       <button onclick="opensignup()" class="signin">Sign Up</button>
+       <button onclick="" class="login">Login</button>
+    </div>
+<div class="signupcontainer" id="signupcontainer">
+    <span onclick="close()" class="close" title="Close Modal"> &times;</span>
+
+<form id="signupform"name="signupform" class="signupform" method="post">
+        <h2 id="signuph2">User Sign Up</h2>
+<label class="fname">First Name:</label>
+<input type="text" name="fname" id="fname" required />
+<label class="sname">Second Name:</label>
+<input type="text" name="sname" id="sname" required />
+<label class="usern">User name:</label>
+<input type="text" name="usernam" id="usernam" required />
+
+<label class="sname">Password:</label>
+<input type="password" name="password" id="password" required />
+<label class="sname">Re-Enter password:</label>
+<input type="password" name="rpassword" id="rpassword" required />
+<label class="emplno">Employee Number:</label>
+<input type="number" name="empno" id="empno" required />
+<label class="dept">Department:</label>
+<input type="text" name="dept" id="dept" required />
+
+<label class="email">Email:</label>
+<input type="email" name="email" id="email" required />
+<label >
+<input type="checkbox" name="terms" id="terms" value="checked" class="terms" required/>
+   <p class="terms">Check this to agree with our terms and conditions</p> 
+</label>
+
+<div class="signupbuttons">
+<button id="signupbtn" name="signupbtn" class="signupbtn" type="submit"> Submit
+</button>
+<button id="cancel" name="cancel" class="cancel" type="button">Cancel </button>
+</div>
+</form>
+</div>
+<script>
+    function opensignup(){
+     document.getElementById("signupcontainer").style.display='block';
+
+    }
+    function close(){
+     document.getElementById("signupcontainer").style.display='none';
+    }
+</script>
+
+</body>
+</div>
+</html>

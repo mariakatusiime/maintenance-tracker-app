@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+	
+}
+
+.heading1{
+padding-left:20px;
+font-size:40px;
+z-index:1;
+text-align: center;
+color: beige;
+
+
+}
+.headingdiv{
+	background-color: #006666;
+	position: fixed;
+	left:15%;
+	right: 10%
+
+}
+label{
+    display:inline;
+    color:#FFFFFF;
+    
+    }
+    input{
+    display:inline-block;
+    margin:5px 0px 5px 10px;
+    width:70%;
+    height:5%;
+    
+    }
+    input.password{
+        margin-left: 20%;
+    
+    }
+    .logincontainer{
+        height:500px;
+        width:500px;
+         padding-left:50px;
+         padding-right:200px;
+         
+         z-index:1;
+         position:fixed;
+          margin-left:20%; 
+          top:20%;
+        }
+
+        .loginform{
+            background-color: #006666;
+            margin:5% auto 20% auto;
+            width:70%;
+            padding:20%;
+            display: inline-block;
+
+        }
+        .loginbtns{
+            display: block;
+            padding-top: 20px;
+        }
+  
+    td {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    th {
+        font-family: Arial, Helvetica, sans-serif;
+    }    
