@@ -2,24 +2,33 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script src="js/signup.js"></script>
 <link type="text/css" rel="stylesheet" href="css/signup.css"/>
 <title>Maintenace Tracking Application</title>
-<div class="page">
 <div class="headingdiv">
 <h1 id="heading1" class="heading1"> User Maintenace Tracking Application</h1>
 </div>
 </head>
 
 <body>
-    <div>
-       <button onclick="opensignup()" class="signin">Sign Up</button>
-       <button onclick="" class="login">Login</button>
+    <div class="cont">
+        <p class="welcome">Welcome to this employee Maintenace tracker application. This application will 
+            help you to connect to the Maintenace department, ask all your queries and get instant feedback
+        with extra assistance if there is need.<br><br> You can either signup if you're a new user or login with
+    with a click on the buttons. </p>
+    <img src="img/comp.png" class="comp"/>
+        <button onclick="opensignup()" class="signin">Sign Up</button>
+        <p class="or">Or</p>
+       <button onclick="openlogin()" class="login">Login</button>
+    
     </div>
+       
 <div class="signupcontainer" id="signupcontainer">
-    <span onclick="close()" class="close" title="Close Modal"> &times;</span>
+    
+    <span onclick="clos()" class="close" title="Close Form"> &times;</span>
 
 <form id="signupform"name="signupform" class="signupform" method="post">
-        <h2 id="signuph2">User Sign Up</h2>
+        <h2 class="signuph2">User Sign Up</h2>
 <label class="fname">First Name:</label>
 <input type="text" name="fname" id="fname" required />
 <label class="sname">Second Name:</label>
@@ -46,20 +55,25 @@
 <div class="signupbuttons">
 <button id="signupbtn" name="signupbtn" class="signupbtn" type="submit"> Submit
 </button>
-<button id="cancel" name="cancel" class="cancel" type="button">Cancel </button>
+<button id="cancel" name="cancel" class="cancelbtn" type="button">Cancel </button>
 </div>
 </form>
 </div>
-<script>
-    function opensignup(){
-     document.getElementById("signupcontainer").style.display='block';
 
-    }
-    function close(){
-     document.getElementById("signupcontainer").style.display='none';
-    }
-</script>
-
+<div class="logincontainer" id="logincontainer">
+        <span onclick="closl()" class="close" title="Close Form"> &times;</span>    
+ <form class="loginform" method="POST">
+        <h2 class="loginh2">User Login</h2>  
+     <label class="usernam"> User name:</label>
+     <input type="text" name="usernam" id="usernam"placeholder="Enter user name" required/>
+     <label class="password"> password:</label>
+     <input type="password" name="pass" class="pass" id="password" placeholder="Enter user password" required/>
+     <div class="loginbtns">
+     <button type="submit" name="login" class="logingbtn">Login</button>
+     <button type="button" name="cancelbtn" class="cancelbtn" onclick="closl()">Cancel</button>
+    </div>
+ </form>
+ </div>
 </body>
-</div>
+
 </html>

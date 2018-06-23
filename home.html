@@ -1,10 +1,17 @@
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <script src="js/home.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/home.css"/>
         <title>Maintenace Tracking Application</title>
-        <h2>User Maintenace Tracking Application</h2>
+        <div class="headingdiv">
+        <h2 class="heading1">User Maintenace Tracking Application</h2>
+    </div>
     </head>
     <body>
+        <div class="container">
         <p>Hi user</p>
+        
         <table>
             <thead>My Maintenace requests</thead>
             <tbody>
@@ -15,11 +22,38 @@
                 <tr>
                     <td></td>
                     <td></td>
+                    <td></td>
                 </tr>
                 
             </tbody>
         </table>
-        <button name="request" id="request" type="submit">Make a request</button>
-        <button name="lgout" id="lgout" type="button">LogOut</button>
+        <div class="sidebar">
+            
+        <button class="request" onclick="querym()">Query</button>
+        <a href="signup.html"> <button name="lgout" id="lgout" class="LogOut" type="button">LogOut</button>
+        </a>
+
+    </div>
+    </div>
+    <div class="requestcontainer" id="requestcontainer" >
+            <span onclick="clos2()" class="close" title="Close Form"> &times;</span>
+            <form id="requestform" class="requestform" name="requestf" method="POST">
+                <h2 id="requesth">Please Fill in your Maintenance queries.</h2>
+                <label class="queryl"><br>Question</label></br></label>
+                <textarea  name="query" class="query" rows="6" required >
+                        Enter your question here
+                </textarea>
+                <br> <br> <br> <br> <br><br> <br> 
+            
+                <label class="attac">Add attachment (Optional)</label>
+                <input type="file" name="attchm" class="attchm"/>
+                <div class="btns">
+                <button type="submit" name="squery"class="squery" id="squery">Send</button>
+                <button type="reset" name="cancel" class="cancel" onclick="clos2()" id="cancel">Cancel</button>
+            </div>
+            
+            </form>
+        </div>
+        
     </body>
 </html>

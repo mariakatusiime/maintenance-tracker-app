@@ -1,6 +1,9 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-image: url(img/stbl)
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/stbl.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover; 
 	
 }
 
@@ -26,6 +29,67 @@ color: beige;
 p.terms{
 	margin-left:0%;
 }
+.cont{
+	background-color: #023636;
+	height: 400px;
+	width: 600px;
+	margin-left: 400px;
+	display: block;
+	position:fixed;
+	top:20%;
+	padding:30px;
+}
+p.welcome{
+	color: bisque;
+	font-size: 18px;
+}
+.comp{
+	height:250px ;
+	width: 350px;
+	position:fixed;
+}
+p.or{
+	color: bisque;
+	font-size: 25px;
+	position: fixed;
+	font-weight: bold;
+	padding-left:30% ;
+	margin-top: 100px;
+
+}	
+
+.signin{
+	position: fixed;
+	display: block;
+	font-style: oblique;
+	font-weight: bold;
+	background-color: #6db9b9;
+	font-size: 25px;
+	width:180px;
+	height:40px;
+	margin-left:25%;
+	margin-top:30px;
+	border: #023636;
+	border-radius: 12px;
+
+
+}
+.login{
+
+	position: fixed;
+	display: block;
+	font-style: oblique;
+	border: #023636;
+	background-color: #6db9b9;
+	font-size: 25px;
+	font-weight: bold;
+	width: 180px;
+	height:40px;
+	margin-left:25%;
+	margin-top:150px;
+	border-radius: 12px;
+
+}
 .signupcontainer {
 height:500px;
 width:500px;
@@ -35,9 +99,62 @@ overflow:auto;
 z-index:1;
 position:fixed;
 margin-left:20%; 
-top:20%;
+top:15%;
 display: none;
+background: #023636;
 
+}
+.logincontainer{
+height:400px;
+width:300px;
+padding-left:50px;
+padding-right:200px;
+overflow:auto;
+z-index:1;
+position:fixed;
+margin-left:30%; 
+top:15%;
+display:none;
+background: #023636;
+
+}
+.loginh2{
+	color: bisque;
+}
+.logingbtn{
+	font-style: oblique;
+	border: #023636;
+	background-color: #6db9b9;
+	border-radius: 12px;
+	font-weight: bold;
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+	margin-top: 20px;	
+
+}
+.signupbtn{
+	font-style: oblique;
+	border: #023636;
+	background-color: #6db9b9;
+	border-radius: 12px;
+	font-weight: bold;
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+	margin-top: 20px;	
+
+
+}
+.cancelbtn{
+	font-style: oblique;
+	border: #023636;
+	background-color: #6db9b9;
+	border-radius: 12px;
+	font-weight: bold;
+	width: 150px;
+	height: 30px;	
+	font-size: 20px;
 
 }
 label{
@@ -49,9 +166,11 @@ input{
 display:inline-block;
 margin:5px 0px 5px 10px;
 width:80%;
+height:30px; ;
 
 }
-.signin{
+.signuph2{
+	color: bisque;
 
 }
 .signupform{
@@ -60,6 +179,13 @@ margin:5% auto 20% auto;
 width:90%;
 padding:20px;
 
+
+}
+.loginform{
+background-color: #006666;
+margin:5% auto 20% auto;
+width:90%;
+padding:20px;
 
 }
 .signupbuttons ::clear{
@@ -73,7 +199,7 @@ display:block;
 	top: 15px;
 	font-size: 40px;
 	font-weight: bold;
-	color: black;
+	color: rgba(247, 243, 243, 0.89);
 }
 .close:hover,
 .close:focus {
