@@ -1,0 +1,2 @@
+from trackerapp import app
+
